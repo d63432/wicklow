@@ -1,0 +1,64 @@
+{% extends 'master/layout.html' %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<div id="ContentPrimary">
+	<h2>
+		About Us
+	</h2>
+	<div class="grid grid-50">
+    {% include 'master/borders/small-begin.html' %}
+		<h3>President, Chief Executive Officer</h3>
+		<section>
+		  <img class="headShot" src="http://resources.dublinsix.net/images/beth150s.jpg">
+			<p class="title">
+			  Beth Mayes
+			</p>
+			<p>
+			  Beth has spent the majority of her professional career in the publishing industry and has extensive 
+			  experience innovating platforms that host digital media. As the Director of Development for 
+			  Springer platforms, she coordinated the efforts of architects, developers, societies, editorial boards, 
+			  libraries, marketers and licensing managers for one of the largest scholarly content platforms in the 
+			  world.
+			</p>
+			<p>
+			  Focusing on the rapid migration to digital media and constant technological advancement, Beth 
+			  endeavors to seamlessly connect the myriad systems required for publishing, hosting, discovery and 
+			  delivery of online content.
+			</p>
+			<p>
+        Beth graduated from Texas A&amp;M University and held earlier positions in education, customer support, 
+        marketing, sales and product management.
+			</p>
+		</section>
+    {% include 'master/borders/small-end.html' %}
+	</div>
+	<div class="grid grid-50">
+    {% include 'master/borders/small-begin.html' %}
+		<h3>President, Chief Technical Officer</h3>
+		<section>
+  	  <img class="headShot" src="http://resources.dublinsix.net/images/josh150s.jpg">
+			<p class="title">
+			  Joshua Pyle
+			</p>
+			<p>
+				Josh has over 15 years of experience in the publishing industry and was the co-founder of MetaPress, 
+				a division of EBSCO. As Chief Technical Officer and Chief Architect he led the business to become the
+				world's largest primary scholarly content host. He also managed the development and operations for 
+				nearly 200 publisher clients.
+			</p>
+			<p>
+		    In recent years Josh has become passionate about massively-scalable, highly-available, robust, 
+				concurrent systems. With the increasing demand of users and performance expectations of hosting 
+				platforms, he is anxious to offer innovative, intuitive alternatives to publishers and libraries.
+			</p>
+  		<p>
+        Josh graduated from Virginia Tech and held earlier positions as Content Development Manager for EBSCO 
+        Online and as an automation engineer at Trane.
+			</p>
+		</section>
+    {% include 'master/borders/small-end.html' %}
+	</div>
+</div>
+{% endblock %}

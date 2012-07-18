@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-US">
+<head>
+  <title>Dublin Six - {% block title %}{% endblock %}</title>
+  <link rel="shortcut icon" type="image/x-icon" href="http://resources.dublinsix.net/favicon.ico">
+  <link rel="stylesheet" href="http://resources.dublinsix.net/css/reset.css">
+  <link rel="stylesheet" href="http://resources.dublinsix.net/css/master.css">
+  <link rel="stylesheet" href="http://resources.dublinsix.net/css/wicklow/master.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="audience" content="all">
+  <meta name="author" content="Dublin Six">
+  <meta name="copyright" content="2011 Dublin Six, Inc.">
+  <meta name="distribution" content="GLOBAL">
+  <meta name="keywords" content="Scholarly Publishing, Publisher Services, Digital Library Services, AUDITOR, Availability Reporting, Usage Reporting">
+  <meta name="language" content="en-US">
+</head>
+<body>
+  {% include 'master/borders/large-begin.html' %}
+  <div id="Header">
+    <a id="HeaderLogo" href="/">
+      <span>Dublin Six, Digital Library Services</span>
+    </a>
+    <div id="HeaderMenu">
+      <span>
+	Contact: <a href="mailto:hello@dublinsix.com">hello@dublinsix.com</a>
+      </span>
+      <ul>
+	<li>
+	  <a href="/">Home</a>
+	</li>
+	<li>
+	  <a href="/library-services/">For Libraries</a>
+	</li>
+	<li>
+	  <a href="/publisher-services/">For Publishers</a>
+	</li>
+	<li>
+	  <a href="/products/">Our Products</a>
+	</li>
+	<li>
+	  <a href="/about/">About Us</a>
+	</li>
+      </ul>
+    </div>    
+  </div>
+  <div id="Content">
+    {% block content %}
+    <div id="ContentSecondary">
+      {% block content_secondary %}
+      {% include 'content/secondary/conference-calendar.html' %}
+      {% endblock %}
+    </div>
+    <div id="ContentPrimary" class="hasContentSecondary">
+      {% block content_primary %}{% endblock %}
+    </div>
+    {% endblock %}
+    <ul id="ContentFooter">
+      <li>
+        Copyright {% now "Y" %} Dublin Six. All Rights Reserved.
+      </li>
+      <li>
+	<a href="/terms-of-service/">Terms of Service</a>
+      </li>
+      <li>
+	<a href="/privacy-policy/">Privacy Policy</a>
+      </li>
+    </ul>
+  </div>
+  {% include 'master/borders/large-end.html' %}
+  <ul id="Footer">
+    <li>User Host Address: {{ request.META.REMOTE_ADDR }}</li>
+    <li>User Agent: {{ request.META.HTTP_USER_AGENT }}</li>    
+  </ul>    
+</body>
+</html>

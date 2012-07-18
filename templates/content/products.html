@@ -1,0 +1,106 @@
+{% extends 'master/layout.html' %}
+
+{% block title %}Products{% endblock %}
+
+{% block content %}
+<div id="ContentPrimary">
+	<h2>
+		Our Products
+	</h2>
+	<section>
+	  <h3>Comprehensive Circulation Control Returns to the Library</h3>
+	  <p>
+      Circulation services are fundamental, immemorial responsibilities of a librarian. Lending, 
+      monitoring, and collecting statistics on the use of library materials are paramount in 
+      collection management. As scholarly resources migrate from print to digital, librarians 
+      cede more and more of their circulation responsibilities to publishers. The AUDITOR returns 
+      control to the library – saving time and money.
+    </p>
+    <strong class="block">
+      E-resources should be verified locally and their usage logged comprehensively. Availability 
+      should be monitored passively in real time.
+    </strong>
+	</section>
+	<div class="grid grid-33">
+    {% include 'master/borders/small-begin.html' %}
+		<section class="accent accent-1">
+		  <h3>Holdings Verification</h3>
+  		<strong>Access Checking &amp; Link Fault Detection</strong>
+      <p>
+        Holdings verification usually involves the systematic crawling of an entire catalog. This
+        process artificially inflates usage, which weakens the ability to negotiate by decreasing
+        cost per download.
+      </p>
+      <h4>Passive, Local Observation</h4>
+      <p>
+        The AUDITOR observes genuine activity as it occurs yielding no unnatural usage inflation. 
+        Inaccessibility that is isolated to sub-networks is quickly identified.
+      </p>
+		  <h4>Comprehensive, Perpetual Inspection</h4>
+      <p>
+		    The AUDITOR is truly comprehensive. There is no statistical sampling and the verification 
+		    is consistent and continual.
+      </p>
+		  <h4>Real-time Holdings Inference</h4>
+      <p>
+		    Sophisticated click-stream analysis infers library holdings in real-time. Unexpected access 
+		    denials are detected immediately.
+      </p>
+		</section>
+    {% include 'master/borders/small-end.html' %}
+	</div>
+	<div class="grid grid-33">
+    {% include 'master/borders/small-begin.html' %}
+		<section class="accent accent-2">
+      <h3>Usage Logging</h3>
+  		<strong>Comprehensive, Granular, and Local</strong>
+  		<p>
+  		  Currently, less than half of all e-resources offer standardized reports and a third offer 
+  		  no reports at all. The reporting that is available consumes a great deal of time delivering 
+  		  only general statistics when more granular reporting is needed.
+      </p>
+      <h4>Exhaustive, Detailed Data</h4>
+      <p>
+        The AUDITOR does not require usage data from publishers. It logs usage at the article level 
+        and in much more detail.
+      </p>
+      <h4>Real-time Consolidation</h4>
+      <p>
+        Rather than waiting weeks, usage can be reviewed within minutes.
+      </p>
+      <h4>Internal Distribution &amp; Local Archival</h5>
+      <p>
+        Internal IP addresses allow usage to be attributed departmentally. The AUDITOR is its own 
+        local archive. All usage in full detail is always available.
+      </p>     
+		</section>
+    {% include 'master/borders/small-end.html' %}
+	</div>
+	<div class="grid grid-33 grid-accent">
+    {% include 'master/borders/small-begin.html' %}
+		
+		<section class="accent accent-3">
+      <h3>Availability Monitoring</h3>
+      <strong>Passive, Comparative Analysis</strong>
+      <p>
+        E-resources are not always available and their performance can vary dramatically. As with 
+        holdings verification, monitoring e-resources by systematically requesting content weakens 
+        the ability to negotiate by artificially inflating usage. Outages are difficult to diagnose, 
+        consuming valuable resources when they occur.
+      </p> 
+      <h4>Passive, Continuous Observation</h4>
+      <p>
+        The AUDITOR observes genuine activity as it occurs yielding no unnatural usage inflation. 
+        Every request is analyzed.
+      </p>
+      <h4>Comparative Troubleshooting</h4>
+      <p>
+        Error reports from an affected institution are anonymously combined with those from others 
+        to immediately determine if the issue is localized or widespread. All affected institutions 
+        will be promptly notified of the nature of the outage.
+      </p>
+		</section>
+    {% include 'master/borders/small-end.html' %}
+	</div>
+</div>
+{% endblock %}

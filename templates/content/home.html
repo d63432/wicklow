@@ -1,0 +1,58 @@
+{% extends 'master/layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content_primary %}
+<div class="grid grid-50">
+    {% include 'master/borders/small-begin.html' %}
+    <a class="button" href="/library-services/">
+      <span class="heading">
+        Online Circulation Management and Performance Monitoring Services
+      </span>
+      <span class="body">
+        Comprehensive and uniform usage analysis of your entire collection along with systematic monitoring of 
+        access rights and service levels from all providers has finally arrived!
+      </span>
+    </a>
+    {% include 'master/borders/small-end.html' %}
+  </div>
+  <div class="grid grid-50">
+    {% include 'master/borders/small-begin.html' %}
+    <a class="button" href="/publisher-services/">
+      <span class="heading">
+        Platform Management and Society Partnership Services for Publishers
+      </span>
+      <span class="body">
+        From in-house hosting challenges to vendor relationship consulting and management, we have the expertise to
+        address the needs of increasingly savvy researchers and societies.
+      </span>
+    </a>
+    {% include 'master/borders/small-end.html' %}
+  </div>
+  <div class="grid grid-50">
+    {% include 'master/borders/small-begin.html' %}
+    <a class="button" href="/products/">
+      <span class="heading">
+        Innovative Products and Solutions
+      </span>
+      <span class="body">
+        Our e-resource monitoring and auditing tools enable librarians to make informed collection management 
+        decisions, monitor turn-aways and automate online claims. 
+      </span>
+    </a>
+    {% include 'master/borders/small-end.html' %}
+  </div>
+  <div class="grid grid-50">
+    {% include 'master/borders/small-begin.html' %}
+    <a class="button" href="/about/">
+      <span class="heading">
+        Get to know Dublin Six!
+      </span>
+      <span class="body">
+        Founded by veterans of scholarly publishing and hosting, Dublin Six provides innovative solutions, expert 
+        guidance and professional development to publishers and libraries.
+      </span>
+    </a>
+    {% include 'master/borders/small-end.html' %}
+  </div>
+{% endblock %}
