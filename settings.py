@@ -1,5 +1,5 @@
 # Django settings for wicklow project.
-import os.path
+import os
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -153,3 +153,6 @@ LOGGING = {
         },
     }
 }
+
+#if os.environ.get('DEV', None):
+#    import settings_dev
