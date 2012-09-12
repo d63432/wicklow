@@ -9,19 +9,19 @@ def home(request):
     return render(request, 'content/home.html')
 
 def library_services(request):
-  return render(request, 'content/library-services.html')  
+    return render(request, 'content/library-services.html')
 
 def privacy_policy(request):
-  return render(request, 'content/privacy-policy.html')    
+    return render(request, 'content/privacy-policy.html')
 
 def products(request):
-  return render(request, 'content/products.html')
+    return render(request, 'content/products.html')
   
 def publisher_services(request):
-  return render(request, 'content/publisher-services.html')
+    return render(request, 'content/publisher-services.html')
     
 def terms_of_service(request):
-  return render(request, 'content/terms-of-service.html')    
+    return render(request, 'content/terms-of-service.html')
     
     
       
